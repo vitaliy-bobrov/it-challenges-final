@@ -11,7 +11,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:prod": "ng build --prod --base-href /it-challenges-final/",
-    "deploy": "npm run build: prod && gh-pages -d dist -m \"Demo update\"",
+    "deploy": "npm run build:prod && gh-pages -d dist -m \"Demo update\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
