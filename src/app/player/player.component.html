@@ -1,0 +1,41 @@
+<div class="play-bg" [style.background-image]="current?.bg"></div>
+
+<div class="controls" [class.transform]="showPlaylist">
+  <div class="track-clicker"
+       ></div>
+
+  <button class="btn btn_menu"
+          (click)="onMenuClick()">
+    <span class="icon icon_menu"></span>
+  </button>
+
+  <button class="btn btn_prev"
+          (click)="onPrev()">
+    <span class="icon icon_prev"></span>
+  </button>
+
+  <button class="btn btn_next"
+          (click)="onNext()">
+    <span class="icon icon_next"></span>
+  </button>
+
+  <button class="btn btn_play"
+          (click)="onPlayPause()">
+    <span class="icon icon_play" *ngIf="state === 'pause'"></span>
+    <span class="icon icon_pause" *ngIf="state === 'play'"></span>
+  </button>
+
+  <it-circle-progress [progress]="progress$ | async"
+                      (click)="onProgressClick($event)"></it-circle-progress>
+  <div class="info-content">
+    <it-track-time [value]="time$ | async"></it-track-time>
+    <it-track-info [name]="current?.name"
+                   [artist]="current?.artist"></it-track-info>
+  </div>
+</div>
+
+<it-playlist [class.transform]="showPlaylist"
+             [playlist]="playlist"
+             [progress]="progress$ | async"
+             (close)="onCloseClick()"
+             (track)="onTrackClick($event)"></it-playlist>
