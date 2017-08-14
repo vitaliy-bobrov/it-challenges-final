@@ -9,26 +9,26 @@ export class PlayerService {
   constructor() {
     this.list = [
       {
-        path: '/assets/tracks/chopin-mazurka-in-d-major-b4.mp3',
-        bg: 'url(/assets/bg/1.jpg)',
+        path: 'assets/tracks/chopin-mazurka-in-d-major-b4.mp3',
+        bg: 'url(assets/bg/1.jpg)',
         artist: 'Frédéric Chopin',
         name: 'Mazurka in D major, B. 4'
       },
       {
-        path: '/assets/tracks/chopin-mazurka-in-d-major-b71.mp3',
-        bg: 'url(/assets/bg/2.jpg)',
+        path: 'assets/tracks/chopin-mazurka-in-d-major-b71.mp3',
+        bg: 'url(assets/bg/2.jpg)',
         artist: 'Frédéric Chopin',
         name: 'Mazurka in D major, B. 71'
       },
       {
-        path: '/assets/tracks/chopin-spring.mp3',
-        bg: 'url(/assets/bg/3.jpg)',
+        path: 'assets/tracks/chopin-spring.mp3',
+        bg: 'url(assets/bg/3.jpg)',
         artist: 'Frédéric Chopin',
         name: 'Andantino \'Spring\', B. 117'
       },
       {
-        path: '/assets/tracks/chopin-tarantelle-op43.mp3',
-        bg: 'url(/assets/bg/4.jpg)',
+        path: 'assets/tracks/chopin-tarantelle-op43.mp3',
+        bg: 'url(assets/bg/4.jpg)',
         artist: 'Frédéric Chopin',
         name: 'Tarantelle, Op. 43'
       }
